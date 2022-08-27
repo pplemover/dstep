@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height"/>
+        <title>도어스테핑 플레이리스트</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Doorstepping" />
+        <meta property="og:title" content="도어스테핑 플레이리스트" />
+        <!-- <meta property="og:description" content="윤석열 대통령의 도어스테핑 영상을 모아둔 사이트입니다." /> -->
+        <!-- <meta property="og:image" content="./images/???" /> -->
+        <!-- <meta property="og:url" content="https://doorstepping.com" /> -->
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="Doorstepping" />
+        <meta property="twitter:title" content="도어스테핑 플레이리스트" />
+        <!-- <meta property="twitter:description" content="윤석열 대통령의 도어스테핑 영상을 모아둔 사이트입니다." /> -->
+        <!-- <meta property="twitter:image" content="./images/???" /> -->
+        <!-- <meta property="twitter:url" content="https://doorstepping.com" /> -->
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="./js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/bdd3340036.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header>
+            <div class="left_side">
+                <div class="menu_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="/" class="logo">
+                    <span id="logo"><img src="./favicon.ico"></span>
+                    <span id="name">Doorstepping Playlist</span>
+                </a>
+            </div>
+            <div class="right_side">
+                <!-- <ul class="login_selector">
+                    <li><a href="#"><img src="./image/naver.png"></a></li>
+                    <li><a href="#"><img src="./image/facebook.png"></a></li>
+                    <li><a href="#"><img src="./image/kakaotalk.png"></a></li>
+                    <li><a href="#"><img src="./image/google.png"></a></li>
+                </ul> -->
+                <a href="#" class="login">Sign in</a>
+            </div>
+        </header>
+        
+        <div class="trending_section">
+            <div class="searching">
+                <a href="#" id="search1">경찰국 신설</a>
+                <a href="#" id="search2">만 5세 학제개편</a>
+                <a href="#" id="search3">박순애 장관 논란</a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 메뉴 -->
+        <div class="navigation">
+            <!-- ul li 위에 메뉴 버튼과 정렬 맞추기 -->
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-compass" aria-hidden="true"></i></span>
+                        <span class="title">화제의 영상 TOP10</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">유튜브 쇼츠 모아보기</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                        <span class="title">어록 데이터베이스</span>
+                    </a>
+                </li>
+                <hr>
+
+                <h3 class="dashboard">Dashboard</h3>
+                <!-- 추가 기능 필요 : 취임 및 퇴임 날짜 계산 - javascript나 jquery 사용해서 할 것 -->
+                <!-- 추가 기능 필요 : 지지율 가져오기 - javascript나 jquery 사용해서 할 것 -->
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-solid fa-square-caret-up"></i></span>
+                        <span id="inauguration"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-solid fa-square-caret-down"></i></span>
+                        <span id="resignation"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-solid fa-chart-line"></i></span>
+                        <span class="title">지지율 28%<span class="source"> (22.07.29, 한국갤럽)</span></span>
+                    </a>
+                </li>
+                <hr>
+
+                <h3 class="info">Info</h3>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-comments"></i></span>
+                        <span class="title">도어스테핑이란?</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">자주 묻는 질문들</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">문의하기</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 도어스테핑 영상 메뉴 -->
+        <!-- <div class="center_youtubebox">
+                <style>.embed-container { position: relative; padding-bottom: 36.25%; height: 50px; overflow: hidden; max-width: 50%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 80px; left: 300px; width: 100%; height: 100%; }</style>
+                <div class='embed-container'>
+                    <iframe src='https://www.youtube.com/embed/udVj1aLgG2Q' frameborder='0' allowfullscreen>
+                    </iframe>
+                </div>
+            </div> -->
+        
+        <!-- main_king은 main main2로 구성됨 -->
+        <div class="main_king">
+            <!-- 1단 콘텐츠 메뉴 = main (1)newsBox, (2)newsLyrics 가 flex로 구성됨. -->
+            <div class="main">
+                <!-- (1) newsBox  -->
+                <div class="newsBox">
+                    <!-- <div class="days">
+                            <div class="left_side">
+                                <a id="date"></a>
+                            </div>
+                            <div class="right_side">
+                                <a href="#" class="prev">&lt;</a>
+                                <a href="#" class="next">&gt;</a>
+                            </div>
+                        </div> -->
+
+                    <!-- 1 유튜브 영상 부분 -->
+                    <div class="video_video">
+                        <div class="video_ratio">
+                            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/A-Wkki3rFbc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 2 영상 관련정보 부분 -->
+                    <div class="video_info">
+                        <!-- 해당부분은 추후 데이터베이스에서 정보를 불러올 예정입니다. 임시적으로 하드 코딩으로 작성하였습니다. -->
+                        <div class="video_key">
+                            <a id="count">32회 도어스테핑</a>
+                            <a id="date">
+                                <span id="month">7월 </span>
+                                <span id="days">25일</span>
+                            </a>
+                            <a id="keyword">경찰국 신설</a>
+                            <span id="time">4분 42초</span>
+                        </div>
+                    </div>
+
+                    <!-- 3 영상 대화내용 부분 -->
+                    <div class="newsLyrics">
+                        <div>
+                            <span id="question">Q.오늘 첫 출근이신데, 한 말씀 부탁합니다.</span>
+                            <br>
+                            <span id="answer"> A.하하 어제 첫 출근을 하긴 했는데(웃음) 그래 뭐, 어, 어제 제가 그 취임사에 통합 얘기가 빠졌다고 지적하시는 분들이 있는데, 그건
+                                너무 당연한 거기 때문에. 통합이라고 하는 건 우리 정치 과정 자체가 국민 통합의 과정입니다. 나는 ‘통합을 어떤 가치를 지향하면서 할 것이냐’를 얘기한 겁니다.
+                                그렇게 좀 이해를 해주면 좋겠습니다. 그래요.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (2) newsList  -->
+                <div class="newsList">
+                    <div class="newsList_container">
+                        <!-- <button class="btn btn-danger btn-block extra_button"><i
+                                    class="fa fa-shopping-cart"></i> 아직 뭐에 쓰일지 모르는 버튼이야</button> -->
+                        <div class="news">
+                            <div class="news_content">
+                                <a class="card card_hover">
+                                    <!-- 썸네일 -->
+                                    <div class="thumbnail"></div>
+                                    <!-- 첫째줄 = 기본정보(횟수, 날짜) // 둘째 줄 = 영상제목  -->
+                                    <div class="news_info">
+                                        <div class="news_keys">
+                                            <span>32회 도어스테핑</span>
+                                            <span>7월 25일</span>
+                                        </div>
+                                        <span>尹대통령 도어스테핑, 8월 둘째주 재개될 듯</span>
+                                    </div>
+                                    <!-- 영상에 해당하는 태그 -->
+                                    <div class="tags">
+                                        <span class="tag">#화제의 영상</span>
+                                        <span class="tag">#경찰국 신설</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2단 콘텐츠 메뉴 = main2 (1)unknown1 (2) unknown2 으로 구성됨. -->
+            <div class="main2">
+                <div class="unknown1">
+                    <div>
+                        <span>unknown1</span>
+                    </div>
+                </div>
+
+                <div class="unknown2">
+                    <div>
+                        <span>unknown2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 위젯 메뉴 -->
+        <section>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+    </body>
+</html>
