@@ -10,7 +10,7 @@ menuToggle.onclick = function() {
     // video_lyrics.classList.toggle('active');
     // tags.classList.toggle('active');
     if ($('.navigation.active')) {
-        $('.dashboard').slideToggle();
+        $('.statistics').slideToggle();
         $('.info').slideToggle(); 
     }
 };
@@ -77,39 +77,100 @@ new Swiper('.today_section .swiper', {
     loop: true
 });
 
+// change screen
 const playlist_btn = document.querySelector('.playlist');
 const fulltext_btn = document.querySelector('.fulltext');
-const statistics_btn = document.querySelector('.statistics');
-const info_btn = document.querySelector('.playList_Menu .info');
+const statistics_btn = document.querySelector('.stats');
+const info_btn = document.querySelector('.playList_Menu .information');
 
 const Playlist = document.querySelector('#Playlist');
 const Fulltext = document.querySelector('#Fulltext');
 const Statistics = document.querySelector('#Statistics');
 const Info = document.querySelector('#Info');
 
-playlist_btn.onclick = function() {
+function moveto_playlist() {
     Playlist.style.display = "flex";
     Fulltext.style.display = "none";
     Statistics.style.display = "none";
     Info.style.display = "none";
     document.querySelector('.playList_Menu nav a:nth-child(1)').style.color = "#9f2f34";
     $('.playList_Menu nav a:nth-child(1)').css('font-weight', 'bold');
+    document.querySelector('.playList_Menu nav a:nth-child(2)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(2)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(3)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(3)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(4)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(4)').css('font-weight', 'normal');
 }
-fulltext_btn.onclick = function() {
+function moveto_fulltext() {
     Playlist.style.display = "none";
     Fulltext.style.display = "flex";
     Statistics.style.display = "none";
     Info.style.display = "none";
+    document.querySelector('.playList_Menu nav a:nth-child(1)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(1)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(2)').style.color = "#9f2f34";
+    $('.playList_Menu nav a:nth-child(2)').css('font-weight', 'bold');
+    document.querySelector('.playList_Menu nav a:nth-child(3)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(3)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(4)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(4)').css('font-weight', 'normal');
 }
-statistics_btn.onclick = function() {
+function moveto_statistics() {
     Playlist.style.display = "none";
     Fulltext.style.display = "none";
     Statistics.style.display = "flex";
     Info.style.display = "none";
+    document.querySelector('.playList_Menu nav a:nth-child(1)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(1)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(2)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(2)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(3)').style.color = "#9f2f34";
+    $('.playList_Menu nav a:nth-child(3)').css('font-weight', 'bold');
+    document.querySelector('.playList_Menu nav a:nth-child(4)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(4)').css('font-weight', 'normal');
 }
-info_btn.onclick = function() {
+function moveto_info() {
     Playlist.style.display = "none";
     Fulltext.style.display = "none";
     Statistics.style.display = "none";
     Info.style.display = "flex";
+    document.querySelector('.playList_Menu nav a:nth-child(1)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(1)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(2)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(2)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(3)').style.color = "black";
+    $('.playList_Menu nav a:nth-child(3)').css('font-weight', 'normal');
+    document.querySelector('.playList_Menu nav a:nth-child(4)').style.color = "#9f2f34";
+    $('.playList_Menu nav a:nth-child(4)').css('font-weight', 'bold');
+}
+
+playlist_btn.onclick = function() {
+    moveto_playlist();
+}
+fulltext_btn.onclick = function() {
+    moveto_fulltext();
+}
+statistics_btn.onclick = function() {
+    moveto_statistics();
+}
+info_btn.onclick = function() {
+    moveto_info();
+}
+
+const home = document.querySelector('.home');
+home.onclick = function() {
+    moveto_playlist();
+}
+const look_lyrics = document.querySelector('.look_lyrics');
+look_lyrics.onclick = function() {
+    moveto_fulltext();
+}
+const statistics = document.querySelector('.statistics');
+statistics.onclick = function() {
+    moveto_statistics();
+}
+const info = document.querySelector('.info');
+info.onclick = function() {
+    moveto_info();
 }
