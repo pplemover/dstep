@@ -25,29 +25,27 @@ menuToggle.addEventListener('click', function() {
     }
 });
 
-/* 해결해야하는 부분 : 하나 클릭시 하나의 div만 작동되게 */
-const slideDowns = document.querySelectorAll('.slideDown');
-const arrows = document.querySelectorAll('.slideDown .fa');
-const lists = document.querySelectorAll('.list');
+/* 하나 클릭시 하나의 div만 작동되게 */
 var arrowDirection = false;
 var hideDiv = false;
-slideDowns.forEach(function (slideDown) {
-    arrows.forEach(function(arrow) {
-        lists.forEach(function(list) {
-            slideDown.onclick = function() {
-                arrowDirection = !arrowDirection;
-                hideDiv = !hideDiv;
-                if(arrowDirection && hideDiv) {
-                    arrow.classList.add('arrow_change');
-                    list.classList.add('hide');
-                } else {
-                    arrow.classList.remove('arrow_change');
-                    list.classList.remove('hide');
-                }
-            }
-        })
-    })
-})
+function hideList(id) {
+    var list = document.getElementById(id);
+    hideDiv = !hideDiv;
+    if(hideDiv) {
+        list.classList.add('hide');
+    } else {
+        list.classList.remove('hide');
+    }
+}
+function arrowChange(id) {
+    var arrow = document.getElementById(id);
+    arrowDirection = !arrowDirection;
+    if(arrowDirection) {
+        arrow.classList.add('arrow_change');
+    } else {
+        arrow.classList.remove('arrow_change');
+    }
+}
 
 var today = new Date();
 var year = today.getFullYear();

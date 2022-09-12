@@ -8,9 +8,9 @@ body {
     overflow-x: hidden;
     font-family: 'Nanum Gothic', sans-serif;
 }
-/* img {
+img {
     display: block;
-} */
+}
 a {
     text-decoration: none;
 }
@@ -274,7 +274,7 @@ header .logo #name {
     align-content: stretch;
     background: #fbfbf2;
     transition: 0.5s;
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 .main.active {
     width: calc(100% - 65px);
@@ -490,11 +490,11 @@ iframe {
     overflow-y: auto;
 } */
 .playList_Box #Playlist::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 .playList_Box #Playlist::-webkit-scrollbar-thumb {
     height: 30px;
-    background: #3698ff;
+    background: transparent;
     border-radius: 10px;
 }
 .playList_Box #Playlist::-webkit-scrollbar-track {
@@ -516,9 +516,10 @@ iframe {
     float: right;
     width: 50%;
     min-width: 600px;
+    height: 100%;
     /* max-width: 810px; */
     /* max-height: calc(100% - 135px); */
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /* border-radius: 10px; */
     overflow: hidden;
@@ -569,13 +570,12 @@ iframe {
     display: flex;
     flex-direction: column;
     width: calc(100% - 20px);
-    height: 100%;
     background: white;
     padding: 0 5px;
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .main .playList_Box #Playlist .week {
     width: 100%;
@@ -605,12 +605,12 @@ iframe {
     width: 50px;
     height: 50px;
 }
-.main .playList_Box #Playlist .week .week_info .box .percent svg {
+.percent svg {
     position: relative;
     width: 50px;
     height: 50px;
 }
-.main .playList_Box #Playlist .week .week_info .box .percent svg circle {
+.percent svg circle {
     width: 40px;
     height: 40px;
     fill: none;
@@ -621,11 +621,11 @@ iframe {
     stroke-dashoffset: 130;
     stroke-linecap: round;
 }
-.main .playList_Box #Playlist .week .week_info .box .percent svg circle:nth-child(1) {
+.percent svg circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #f3f3f3;
 }
-.main .playList_Box #Playlist .week .week_info .box .percent svg circle:nth-child(2) {
+.percent svg circle:nth-child(2) {
     stroke-dashoffset: calc(130 - (130 * 60) / 100);
     stroke: #3698ff;
 }
