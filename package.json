@@ -1,0 +1,24 @@
+{
+  "name": "gitconnect_dstep",
+  "version": "1.0.0",
+  "description": "프로젝트에 대한 간단한 소개 문구를 작성하세요.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index,html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pplemover/dstep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pplemover/dstep/issues"
+  },
+  "homepage": "https://github.com/pplemover/dstep#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
