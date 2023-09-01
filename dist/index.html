@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=10, width=device-width">
+        <title>NoTitle</title>
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="SUA compilations">
+        <meta property="og:title" content="Sudden Unintended Accelerations Compilations">
+        <!-- <meta property="og:description" content="--사이트입니다." /> -->
+        <!-- <meta property="og:image" content="./images/???" /> -->
+        <!-- <meta property="og:url" content="https://doorstepping.com" /> -->
+
+        <link rel="shortcut icon" href="/favicon.26242483.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+        <link rel="stylesheet" href="/main.c52e0fe2.css">
+        <link rel="stylesheet" href="/main.39afc03c.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/bdd3340036.js" crossorigin="anonymous"></script>
+        <script defer="" src="/main.fb6bbcaf.js"></script>
+    <script src="/main.c52e0fe2.js"></script><script src="/main.39afc03c.js"></script></head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header>
+            <div class="left_side">
+                <div class="menu_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="/" class="logo">
+                    <span id="logo"><img src="/favicon.26242483.ico"></span>
+                    <span id="name">Doorstepping Playlist</span>
+                </a>
+            </div>
+            <div class="right_side">
+                <a href="#" class="login">Sign in</a>
+            </div>
+        </header>
+
+        <!-- container 안에 navigation, main(main안에 newsBox, newsList가 있음) -->
+        <div class="container">
+            <!-- 네비게이션 메뉴 -->
+            <div class="navigation">
+                <!-- ul li 위에 메뉴 버튼과 정렬 맞추기 -->
+                <ul>
+                    <li>
+                        <a href="#Playlist" class="home">
+                            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                            <span class="title">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-compass" aria-hidden="true"></i></span>
+                            <span class="title">화제의 영상 TOP10</span>
+                        </a>
+                    </li>
+                    <hr>
+
+                    <a href="#Statistics"><h3 class="statistics">Statistics</h3></a>
+
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                            <span class="title">영상 통계</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-comments"></i></span>
+                            <span class="title">텍스트 분석</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-solid fa-square-caret-up"></i></span>
+                            <span id="inauguration"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-solid fa-square-caret-down"></i></span>
+                            <span id="resignation"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-solid fa-chart-line"></i></span>
+                            <span class="title">지지율 28%<span class="source"> (22.07.29, 한국갤럽)</span></span>
+                        </a>
+                    </li>
+                    <hr>
+
+                    <a href="#Info"><h3 class="info">Info</h3></a>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-comments"></i></span>
+                            <span class="title">도어스테핑이란?</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                            <span class="title">자주 묻는 질문들</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                            <span class="title">문의하기</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 콘텐츠 메뉴(1)newsBox, (2)playList_Box로 구성됨 -->
+            <div class="main">
+                <div class="newsBox">
+                    <!-- <div class="days">
+                        <div class="left_side">
+                            <a id="date"></a>
+                        </div>
+                        <div class="right_side">
+                            <a href="#" class="prev">&lt;</a>
+                            <a href="#" class="next">&gt;</a>
+                        </div>
+                    </div> -->
+                                    
+                    <!-- 1. (1) 오늘 날짜 및 도어스테핑 여부 -->
+                    <div class="today_section">
+                        <a id="today"></a>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span id="today_notice">오늘은 왜 안한건지 모르겠다.</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span id="today_notice">안녕하세요?.</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span id="today_notice">윤석열 화이팅.</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span id="today_notice">ㅎㅇㅎㅇ.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. (2) 해당 날짜 및 도어스테핑 제목/키워드 -->
+                    <div class="video_title">
+                        <div class="doorstepping_date">
+                            <span id="month">7월 </span>
+                            <span id="days">25일</span>
+                        </div>
+                        <div class="doorstepping_info">
+                            <h1 id="title">32번째 도어스테핑</h1>
+                            <h2 id="keyword">#학제개편 #경찰국 신설</h2>
+                        </div>
+                    </div>
+
+                    <!-- 2. video -->
+                    <!-- 2. (1) 유튜브 영상 부분 -->
+                    <div class="video_video">
+                        <div class="video_ratio">
+                            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/A-Wkki3rFbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- 2. (2) 영상 통계 부분 -->
+                    <div class="video_info">
+                        <div class="question_count">
+                            <span>문답 개수</span>
+                            <span>평균</span>
+                            <span>?개</span>
+                            <span>?</span>
+                        </div>
+                        <div class="doorstepping_time">
+                            <span>소요시간</span>
+                            <span>평균</span>
+                            <span>?분 ?초</span>
+                            <span>?분 ?초</span>
+                        </div>
+                        <div class="doorstepping_keyword">
+                            <span class="key">오늘의 핵심 키워드</span>
+                            <div>
+                                <span>민주주의</span>
+                                <span>경찰국 신설</span>
+                                <span>영부인</span>
+                                <span>학제개편</span>
+                            </div>
+                            <div class="look_lyrics">
+                                <a>전문 확인하러 가기 ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 부가컨텐츠 박스  -->
+                <div class="playList_Box">
+                    <div class="playList_Menu">
+                        <nav>
+                            <a href="#Playlist" class="playlist">Playlist</a>
+                            <a href="#FullText" class="fulltext">Full Text</a>
+                            <a href="#Statistics" class="stats">Statistics</a>
+                            <a href="#Info" class="information">Info</a>
+                        </nav>
+                    </div>
+                    <div id="Playlist">
+                        <div class="week">
+                            <div class="week_info">
+                                <div class="box">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>3</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="when_count">
+                                    <span class="when">8월 3주차</span>
+                                    <span class="count">3/5</span>
+                                </div>
+                                <div onclick="hideList('hide1'); arrowChange('arrow1');" class="slideDown">
+                                    <i id="arrow1" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div id="hide1" class="list">
+                                <div class="day">
+                                    <a class="list_num">28</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">27</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">26</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="week">
+                            <div class="week_info">
+                                <div class="box">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>4</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="when_count">
+                                    <span class="when">8월 2주차</span>
+                                    <span class="count">4/5</span>
+                                </div>
+                                <div onclick="hideList('hide2'); arrowChange('arrow2');" class="slideDown">
+                                    <i id="arrow2" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div id="hide2" class="list">
+                                <div class="day">
+                                    <a class="list_num">28</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">27</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">26</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">25</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="week">
+                            <div class="week_info">
+                                <div class="box">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                            <circle cx="20" cy="20" r="20"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>4</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="when_count">
+                                    <span class="when">8월 2주차</span>
+                                    <span class="count">4/5</span>
+                                </div>
+                                <div onclick="hideList('hide3'); arrowChange('arrow3');" class="slideDown">
+                                    <i id="arrow3" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div id="hide3" class="list">
+                                <div class="day">
+                                    <a class="list_num">28</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">27</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">26</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                                <div class="day">
+                                    <a class="list_num">25</a>
+                                    <a class="date_title">
+                                        <span class="list_date">7월 25일</span>
+                                        <span class="list_title">검찰 반발 확산에 "행안부, 경찰청서 필요조치 할 것"</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4. Full Text -->
+                    <div id="Fulltext">
+                        <div class="video_lyrics">
+                            <div id="lyrics">
+                                <span class="question">Q.오늘 첫 출근이신데, 한 말씀 부탁합니다.</span>
+                                <br>
+                                <span class="answer"> A.하하 어제 첫 출근을 하긴 했는데(웃음) 그래 뭐, 어, 어제 제가 그 취임사에 통합 얘기가 빠졌다고 지적하시는 분들이 있는데, 그건
+                                    너무 당연한 거기 때문에. 통합이라고 하는 건 우리 정치 과정 자체가 국민 통합의 과정입니다. 나는 ‘통합을 어떤 가치를 지향하면서 할 것이냐’를 얘기한 겁니다.
+                                    그렇게 좀 이해를 해주면 좋겠습니다. 그래요.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <!-- 5. Statistics -->
+                    <div id="Statistics">
+                        <div class="video_lyrics">
+                            <span id="lyrics">
+                                <span class="question">Q.오늘 첫 출근이신데, 한 말씀 부탁합니다.</span>
+                                <br>
+                                <span class="answer"> A.하하 어제 첫 출근을 하긴 했는데(웃음) 그래 뭐, 어, 어제 제가 그 취임사에 통합 얘기가 빠졌다고 지적하시는 분들이 있는데, 그건
+                                    너무 당연한 거기 때문에. 통합이라고 하는 건 우리 정치 과정 자체가 국민 통합의 과정입니다. 나는 ‘통합을 어떤 가치를 지향하면서 할 것이냐’를 얘기한 겁니다.
+                                    그렇게 좀 이해를 해주면 좋겠습니다. 그래요.
+                                </span>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <!-- 6. Info-->
+                    <div id="Info">
+                        <div class="video_lyrics">
+                            <span id="lyrics">
+                                <span class="question">Q.오늘 첫 출근이신데, 한 말씀 부탁합니다.</span>
+                                <br>
+                                <span class="answer"> A.하하 어제 첫 출근을 하긴 했는데(웃음) 그래 뭐, 어, 어제 제가 그 취임사에 통합 얘기가 빠졌다고 지적하시는 분들이 있는데, 그건
+                                    너무 당연한 거기 때문에. 통합이라고 하는 건 우리 정치 과정 자체가 국민 통합의 과정입니다. 나는 ‘통합을 어떤 가치를 지향하면서 할 것이냐’를 얘기한 겁니다.
+                                    그렇게 좀 이해를 해주면 좋겠습니다. 그래요.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+    </body>
+</html>
